@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <div class="col-sm-12">
+		<head>
+    		<meta charset="utf-8">
+    		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    		<meta name="viewport" content="width=device-width, initial-scale=1">
+    		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+   		 	<title>Tiles</title>
+   		 	<!-- Bootstrap -->
+    		<!-- Latest compiled and minified CSS -->
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    		<!-- Optional theme -->
+    		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    		<style type="text/css">
+				/* this CSS is included for the grid of blocks to ensure that none of the blocks are wrapped */
+				#blockID {
+					padding: 0;
+					margin: 0;
+					width: 100%;
+					white-space: nowrap;
+					margin-top: 10px;
+				}
+				/* adds a little margine between submit and input */
+				#submitInput {
+					margin-top: 10px;
+				}
+				/* To center header of page */
+				#main {
+					text-align: center;
+				}
+				#author{
+					text-align: center;
+				}
+			</style>
+			<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    		<!--[if lt IE 9]>
+      			<script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    		<![endif]-->
+    	</head>
+		<body onload="grid();"> <!-- accesses the grid function from the JS code -->
+			<h1 id="main">Random Box Generator</h1>
+			<h2 id="author">Ayman Mobin</h2>
+			<p>Please input values for the height and width of the grid of boxes.</p>
+			<form name="myForm">
+  				Height: <br>
+  					<input id="h" type="number" name="height" min="1"><br> <!-- input for height value -->
+  				Width: <br>
+  					<input id="w" type="number" name="width" min="1"><br> <!-- input for width value -->
+  				<input id="submitInput" type="submit" value="Submit">
+ 			</form>
+ 			  <div id="blockID"></div> <!-- this is where the grid is outputted -->
+ 			<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    		<!-- Include all compiled plugins (below), or include individual files as needed -->
+    		<!-- Latest compiled and minified JavaScript -->
+    		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    		<script src="color_gen.js"></script>
+		</body>
+	</div>
+</html>
